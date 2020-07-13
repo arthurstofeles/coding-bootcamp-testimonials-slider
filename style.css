@@ -8,17 +8,29 @@ body {
     background-image: url('./images/pattern-curve.svg');
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     font-family: 'Inter', sans-serif;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    height: 95%;
 }
 
 .container {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 30px;
+    height: 100%;
+}
+
+.slider-show {
+    padding: 0 75px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .testimonials {
@@ -28,8 +40,7 @@ body {
 
 .depoiment {
     position: relative;
-    left: 185px;
-    padding: 15px;
+    left: 90px;
 }
 
 .text-depoiment {
@@ -40,6 +51,7 @@ body {
     z-index: 9;
     padding-top: 75px;
     position: relative;
+    margin-right: -35px;
 }
 
 .text-depoiment::before {
@@ -53,11 +65,11 @@ body {
     background-size: cover;
     position: absolute;
     left: 95px;
-    top: 0;
+    top: 10px;
 }
 
 .identification {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 35px;
 }
 
@@ -76,27 +88,40 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 85px;
-    border-radius: 2px;
-    max-width: 696px;
-    text-align: center;
+    padding: 90px 92px 20px 65px;
 }
 
-.image img {
-    border-radius: 5px;
+.photo{
+    border-radius: 8px;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
 .navegation {
-    max-width: 100px;
+    max-width: 110px;
     width: 100%;
-    padding: 15px;
+    padding: 19px;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 50px;
+    position: relative;
+    left: 60px;
+    bottom: 26px;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.17);
 }
 
 .navegation a {
     line-height: 0;
 }
+
+footer {
+    text-align: center;
+    height: 5%;
+}
+
+.attribution {
+    color:  hsl(240, 38%, 20%);
+    font-size: 12px;
+}
+
