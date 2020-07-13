@@ -127,15 +127,28 @@ footer {
 
 /* SMALL DESKTOP VERSION */
 
-@media only screen and (max-width: 1170px) and (min-width: 1024px) {
+@media only screen and (max-width: 1170px) and (min-width: 768px) {
     
+    html {
+        height: 100%;
+    }
+
     body {
         overflow: visible;
-        height: 100vh;
+        height: auto;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .container {
+        height: auto;
     }
 
     .slider-show {
-        padding: 0;
+        padding: 30px;
+        height: auto;
     }
 
     .testimonials {
@@ -145,7 +158,7 @@ footer {
     .depoiment {
         position: static;
         text-align: center;
-        padding: 0 70px 70px 70px;
+        padding: 0 100px 100px 100px;
     }
 
     .text-depoiment {
@@ -169,7 +182,167 @@ footer {
         margin: 0 auto;
     }
 
-    .footer {
-        margin-bottom: 10px;
+    footer {
+        padding: 20px;
+    }
+}
+
+/* TABLET LANDSCAPE */
+
+@media (min-width: 1024px) and (orientation: landscape) {
+
+    html {
+        height: auto;
+    }
+}
+
+/* TABLET VERSION */
+
+@media (max-width: 1023px) {
+
+    html {
+        height: auto;
+    }
+
+}
+
+/* MOBILE VERSION */
+@media (max-width: 767px) {
+    
+    html {
+        height: 100%;
+    }
+
+    body {
+        overflow: visible;
+        background-size: 100%;
+        overflow: hidden;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .slider-show {
+        padding: 35px;
+        height: 100%;
+    }
+
+    .testimonials {
+        flex-direction: column-reverse;
+    }
+
+    .depoiment {
+        position: static;
+        text-align: center;
+        padding: 0;
+    }
+
+    .text-depoiment {
+        position: relative;
+        margin: 0;
+        font-size: 18px;
+        padding-top: 35px;
+    }
+
+    .text-depoiment::before {
+        width: 50px;
+        height: 60px;
+        background-size: contain;
+    }
+
+    .identification {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .identification .job, 
+    .identification .name {
+        display: block;
+    }
+
+    .image {
+        padding: 30px 35px 0px 35px;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    .navegation {
+        left: 0;
+        bottom: 20px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 80px;
+    }
+
+    .navegation a img {
+        height: 12px;
+    }
+
+    .text-depoiment::before {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        font-size: 11px;
+    }
+
+}
+
+/* MOBILE LANDESCAPE  */
+
+@media (min-width:480px) and (orientation: landscape) {
+
+    body {
+        overflow: visible;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    html {
+        height: auto;
+    }
+
+}
+
+/* SMALL DEVICES  */
+
+@media (max-width: 320px) {
+
+    html {
+        height: auto;
+    }
+
+    body {
+        overflow: visible;
+        height: auto;
+    }
+    
+    .slider-show {
+        padding: 19px;
+    }
+
+    .identification {
+        margin-top: 15px;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 15px;
     }
 }
