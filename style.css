@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    background-image: url('./images/pattern-curve.svg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+}
+
+.depoiment {
+    position: relative;
+    left: 185px;
+    padding: 15px;
+}
+
+.text-depoiment {
+    font-size: 32px;
+    font-weight: 300;
+    color: hsl(240, 38%, 20%);
+    line-height: 1.4;
+    z-index: 9;
+    padding-top: 75px;
+    position: relative;
+}
+
+.text-depoiment::before {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 100px;
+    background-image: url('./images/pattern-quotes.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 95px;
+    top: 0;
+}
+
+.identification {
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+.identification .name {
+    font-weight: 700;
+    color: hsl(240, 38%, 20%);
+}
+
+.identification .job {
+    font-weight: 500;
+    color: hsl(240, 18%, 77%);
+}
+
+.image {
+    background-image: url('./images/pattern-bg.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 85px;
+    border-radius: 2px;
+    max-width: 696px;
+    text-align: center;
+}
+
+.image img {
+    border-radius: 5px;
+}
+
+.navegation {
+    max-width: 100px;
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+
+.navegation a {
+    line-height: 0;
+}
