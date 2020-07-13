@@ -88,7 +88,7 @@ main {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 90px 92px 20px 65px;
+    padding: 90px 92px 18px 65px;
 }
 
 .photo{
@@ -125,3 +125,51 @@ footer {
     font-size: 12px;
 }
 
+/* SMALL DESKTOP VERSION */
+
+@media only screen and (max-width: 1170px) and (min-width: 1024px) {
+    
+    body {
+        overflow: visible;
+        height: 100vh;
+    }
+
+    .slider-show {
+        padding: 0;
+    }
+
+    .testimonials {
+        flex-direction: column-reverse;
+    }
+
+    .depoiment {
+        position: static;
+        text-align: center;
+        padding: 0 70px 70px 70px;
+    }
+
+    .text-depoiment {
+        position: relative;
+        margin: 0;
+    }
+
+    .image {
+        padding: 100px 75px 30px 75px;
+    }
+
+    .navegation {
+        left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text-depoiment::before {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .footer {
+        margin-bottom: 10px;
+    }
+}
