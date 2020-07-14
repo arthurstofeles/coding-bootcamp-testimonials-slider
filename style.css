@@ -113,7 +113,22 @@ main {
 .navegation .prev,
 .navegation .next {
     line-height: 0;
-    padding: 19px
+    padding: 19px;
+    cursor: pointer;
+    width: 55px;
+}
+
+.navegation .prev:hover,
+.navegation .next:hover {
+    background-color: hsl(240, 18%, 77%);
+}
+
+.navegation .prev:hover {
+    border-radius: 50px 0 0 50px;
+}
+
+.navegation .next:hover {
+    border-radius: 0 50px 50px 0;
 }
 
 footer {

@@ -42,7 +42,7 @@ function verifyIndex() {
     }
 }
 
-const changeIndex = (index) => {
+function changeIndex(index) {
     photo.src = testmonials[index].photo;
     text.innerHTML = testmonials[index].text;
     name.innerHTML = testmonials[index].name;
